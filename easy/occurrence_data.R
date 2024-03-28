@@ -23,5 +23,5 @@ filtered <- filtered  %>% select(c(species, longitude, latitude, day, month, yea
 print('Number of records after selecting only species, longitude, latitude, day, month, year:')
 print(nrow(filtered))
 
-print('Dataframe after allperforming all filter and select operations')
+print('Dataframe after performing all filter and select operations')
 print(filtered, n = 50)
