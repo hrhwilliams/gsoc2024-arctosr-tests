@@ -6,15 +6,19 @@ data <- occ('Canis lupus', from='gbif', limit=50)
 ```
 
 Number of records after download:
+
 50
 
 Number of records after filtering out null geographic coordinates:
+
 50
 
-Number of records after filtering out coordinate uncertainty > 1000
+Number of records after filtering out coordinate uncertainty > 1000:
+
 34
 
 Number of records after selecting only species, longitude, latitude, day, month, year:
+
 34
 
 Dataframe after performing all filter and select operations:
