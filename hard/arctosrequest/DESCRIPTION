@@ -2,10 +2,11 @@ Package: arctosrequest
 Title: ArctosRequester
 Version: 0.0.0.9000
 Authors@R: 
-    person("Harlan", "Williams", , "hrw@ku.edu", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: Makes an API request to Arctos
-License: use_mit_license()
+    person("Harlan", "Williams", , "hrw@ku.edu", role = c("aut", "cre"))
+Description: Makes an API request to Arctos.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
+Imports: 
+    httr2
