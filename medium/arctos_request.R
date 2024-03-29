@@ -1,7 +1,4 @@
 library(httr2)
-library(jsonlite)
-library(dplyr)
-library(tidyr)
 
 arctos_url = "https://arctos.database.museum"
 arctos_api_version = "component/api/v2"
