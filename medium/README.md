@@ -22,7 +22,7 @@ req = get_arctos_data('Canis lupus')
 This has the same effect of going to the URL
 `https://arctos.database.museum/component/api/v2/catalog.cfc?api_key=[OMITTED]&method=getCatalogData&queryformat=struct&scientific_name=Canis_lupus` and downloading the JSON response from Arctos into R.
 
-I then converted the request into an R dataframe with the code:
+I then converted the data from the request into an R dataframe with the code:
 
 ```
 l = req$DATA
@@ -45,6 +45,7 @@ the resulting df:
 8              30303779                                                                               
 9              31965089                                                                               
 10             28656018 United States    1969-04-17                          2289 31.195707 -98.728938
+
                 guid state_prov        scientific_name                  spec_locality
 1   ACUNHC:Mamm:1828     Alaska            Canis lupus                  Port Alsworth
 2    ALMNH:Mamm:1429    Alberta            Canis lupus                     Whitecourt
