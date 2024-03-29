@@ -1,4 +1,7 @@
 library(httr2)
+library(jsonlite)
+library(dplyr)
+library(tidyr)
 
 arctos_url = "https://arctos.database.museum"
 arctos_api_version = "component/api/v2"
@@ -46,14 +49,22 @@ request_api_map <- function() {
   about_request(list(`method`="api_map"))
 }
 
-list_code_tables <- function(api_key) {
+list_code_tables <- function() {
   authority_request(list(`method`="code_tables"), api_key)
 }
 
-request_code_table <- function(table, api_key) {
+request_code_table <- function(table) {
   authority_request(list(`method`="code_tables", tbl = table), api_key)
 }
 
-get_arctos_data <- function(scientific_name, api_key) {
+get_arctos_data <- function(scientific_name) {
   catalog_request(list(`scientific_name`=scientific_name), api_key)
 }
+
+
+req = get_arctos_data('Canis lupus')
+
+l = req$DATA
+df <- data.frame(matrix(unlist(l), nrow = length(l), byrow = TRUE)) |>
+  setNames(names(l[[1]]))
+df
