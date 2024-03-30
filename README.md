@@ -15,7 +15,7 @@ Medium: Found in the `medium/` folder of this repository with summary in that fo
 - Create a function that downloads specimen records from the Arctos database (https://arctos.database.museum/) via their API (https://handbook.arctosdb.org/documentation/api.html) with queries using species scientific/Latin names.
 - Demonstrate the use of the function with a mammal species of your choice.
 
-Hard: Found in the `hard/arctosrequest/` folder of this repository with summary in that folder's README.md. The `.yaml` file associated with the GitHub action set up for the last challenge is found in the repository's root folder inside `.github/`.
+Hard: The package created for this tier, `arctosrequest` is found in the `hard/arctosrequest/` folder of this repository with summary in that folder's README.md. The `.yaml` file associated with the GitHub action set up for the last challenge is found in the repository's root folder inside `.github/`.
 
 - Create an R package that contains the function created above (and helper functions if needed).
 - Create an example of how to install the package and use the function.
