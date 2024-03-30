@@ -15,5 +15,6 @@ get_arctos_data(scientific_name, api_key)
 dataframe
 }
 \description{
-Returns a dataframe of
+Returns a dataframe of up to ten records for a species by requesting
+data from Arctos
 }
