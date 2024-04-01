@@ -26,7 +26,7 @@ You can install the development version of arctosrequest from
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("hrhwilliams/gsoc2024-arctosr-tests")
+devtools::install_github("hrhwilliams/gsoc2024-arctosr-tests/hard/arctosrequest")
 ```
 
 ## Example
